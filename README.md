@@ -35,12 +35,14 @@ emp_no
 INTO deliverable_one_part
 
 FROM
+
     (SELECT first_name,
           last_name,
           title,
        salary,
        emp_no,
   ROW_NUMBER() OVER
+  
  (PARTITION BY (emp_no)
  ORDER BY from_date DESC) rn
  FROM deliverable_one as del
