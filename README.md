@@ -2,7 +2,7 @@
 
 Through using the data we were trying to solve the total number of employees per title who were retiring and the employees who are eligible to participate in a mentorship program. The reason for this analysis is to help provide solutions for the big number of upcoming retiring employees while trying to find employees elegible for a mentorship program to hopefully move them up in the company. 
 
-To get the number of retiring employees, we merged two tables to recieve the employee information in order to see how many employees were retiring. 
+To get the number of retiring employees, we merged two tables to recieve the employee information in order to see how many employees were retiring: 
 
 " -- Create new table for deliverable_one
 
