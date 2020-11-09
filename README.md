@@ -31,7 +31,9 @@ last_name,
 title,
 salary,
 emp_no
+
 INTO deliverable_one_part
+
 FROM
     (SELECT first_name,
           last_name,
