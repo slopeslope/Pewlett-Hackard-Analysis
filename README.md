@@ -7,6 +7,7 @@ To get the number of retiring employees, we merged two tables to recieve the emp
 " -- Create new table for deliverable_one
 
 SELECT ri.emp_no, ri.first_name, ri.last_name, ti.title, s.salary, s.from_date
+
 INTO deliverable_one
 FROM retirement_info AS ri
 INNER JOIN salaries AS s
