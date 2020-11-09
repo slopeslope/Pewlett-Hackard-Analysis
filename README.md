@@ -16,7 +16,7 @@ To get the number of retiring employees, we merged two tables to recieve the emp
 
 We then had to partition the data to clean it and eliminate doubles. 
 
-    ("-- Partition the data to show only most recent title per employee
+    "-- Partition the data to show only most recent title per employee
 
     SELECT first_name,
     last_name,
@@ -38,7 +38,7 @@ We then had to partition the data to clean it and eliminate doubles.
        ORDER BY from_date DESC) rn
        FROM deliverable_one as del) 
     tmp WHERE rn = 1
-    ORDER BY emp_no; ") 
+    ORDER BY emp_no; "
 
 From there we set our sights on the mentorship data. We basically did the same process but added the birth dates of the eligble employees. We also had to partition this data due to having doubles in the first data table. 
 
