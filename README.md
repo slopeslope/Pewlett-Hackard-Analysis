@@ -25,6 +25,7 @@ SELECT * FROM deliverable_one "
 We then had to partition the data to clean it and eliminate doubles. 
 
 "-- Partition the data to show only most recent title per employee
+
 SELECT first_name,
 last_name,
 title,
