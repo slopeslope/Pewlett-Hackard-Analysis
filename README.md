@@ -4,23 +4,15 @@ Through using the data we were trying to solve the total number of employees per
 
 To get the number of retiring employees, we merged two tables to recieve the employee information in order to see how many employees were retiring: 
 
-" -- Create new table for deliverable_one
-
-SELECT ri.emp_no, ri.first_name, ri.last_name, ti.title, s.salary, s.from_date
-
-INTO deliverable_one
-
-FROM retirement_info AS ri
-
-INNER JOIN salaries AS s
-
-ON (ri.emp_no = s.emp_no)
-
-INNER JOIN titles AS ti
-
-ON (ri.emp_no = ti.emp_no)
-
-SELECT * FROM deliverable_one "
+    " -- Create new table for deliverable_one
+    SELECT ri.emp_no, ri.first_name, ri.last_name, ti.title, s.salary, s.from_date
+    INTO deliverable_one
+    FROM retirement_info AS ri
+    INNER JOIN salaries AS s
+    ON (ri.emp_no = s.emp_no)
+    INNER JOIN titles AS ti
+    ON (ri.emp_no = ti.emp_no)
+    SELECT * FROM deliverable_one "
 
 We then had to partition the data to clean it and eliminate doubles. 
 
