@@ -11,6 +11,7 @@ SELECT ri.emp_no, ri.first_name, ri.last_name, ti.title, s.salary, s.from_date
 INTO deliverable_one
 
 FROM retirement_info AS ri
+
 INNER JOIN salaries AS s
 ON (ri.emp_no = s.emp_no)
 INNER JOIN titles AS ti
